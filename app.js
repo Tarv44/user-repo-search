@@ -10,6 +10,7 @@ function displayResults(response) {
     for (let i = 0; i < response.length; i++) {
         results += formatRepo(response[i]);
     }
+    $('.results ul').empty();
     $('.results ul').append(results);
 }
 
